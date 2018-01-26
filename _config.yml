@@ -1,10 +1,10 @@
 # Site settings
-title: 
+title: MFeuer's Tech Blog
 header-img: img/home-bg.png
 email: mallory.feuer@gmail.com
 copyright_name: MFeuer23
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Woman Takes Tech
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  MFeuer23
