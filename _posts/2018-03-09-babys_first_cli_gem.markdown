@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Baby's First CLI Gem!"
-date:       2018-03-10 00:09:35 +0000
+title:      "Babys First CLI Gem!"
+date:       2018-03-09 19:09:36 -0500
 permalink:  babys_first_cli_gem
 ---
 
