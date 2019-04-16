@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Essential CSS"
-date:       2019-04-16 14:55:20 +0000
+date:       2019-04-16 10:55:21 -0400
 permalink:  essential_css
 ---
 
