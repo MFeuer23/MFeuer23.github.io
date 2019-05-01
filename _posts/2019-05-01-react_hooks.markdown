@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "React Hooks"
-date:       2019-05-01 18:49:11 +0000
+date:       2019-05-01 14:49:12 -0400
 permalink:  react_hooks
 ---
 
@@ -99,10 +99,10 @@ We use destructuring assignment to name our value `count` and our function `setC
  const [count, setCount] = useState(0);
  ```
  
- #### Why?
+ ### Why?
  Classes can be [confusing](https://reactjs.org/docs/hooks-intro.html#classes-confuse-both-people-and-machines). Using Hooks solves a lot of the problems that Classes present, and it makes our code easier to reuse and organize.
  
- #### Multiple State Hooks
+ ### Multiple State Hooks
  We can even use `useState()` multiple times in the same function.
  ```
  import React, { useState } from 'react';
