@@ -116,7 +116,7 @@ function Example() {
 }
  ```
  
- ## **React's Effect Hook**
+## **React's Effect Hook**
  The Effect Hook is used to move component lifecycle methods into functional components. Effects are similar to methods such as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`. Effects will run after every render, including the first render. 
  
  ```
