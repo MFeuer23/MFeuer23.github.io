@@ -8,7 +8,7 @@ permalink:  react_hooks
 
 React Hooks are a new feature that just came out in React 16.8 a couple of months ago. React Hooks allow us to use state and lifecycle methods in functional components. Before Hooks, in order to use these methods, you'd have to expressing your react component with an ES6 class (or `React.Component`). So while Hooks let us use React's features without classes, classes aren't being removed or discouraged--we are simply being given more options.
 
-## React's State Hook
+## **React's State Hook**
 
 Here's an example of how you can now refactor a class component into a functional component while still being able to access and change state.
 
@@ -53,7 +53,7 @@ function Counter() {
 }
 ```
 
-#### useState()
+### **useState()**
 
 `useState()` uses [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) for arrays, similiarly to how we would pull props out of an object with object destructuring.
 
@@ -99,10 +99,10 @@ We use destructuring assignment to name our value `count` and our function `setC
  const [count, setCount] = useState(0);
  ```
  
-#### Why?
+### **Why?**
  Classes can be [confusing](https://reactjs.org/docs/hooks-intro.html#classes-confuse-both-people-and-machines). Using Hooks solves a lot of the problems that Classes present, and it makes our code easier to reuse and organize.
  
-#### Multiple State Hooks
+ ### **Multiple State Hooks**
  We can even use `useState()` multiple times in the same function.
  ```
  import React, { useState } from 'react';
@@ -116,7 +116,7 @@ function Example() {
 }
  ```
  
- ##  React's Effect Hook
+ ## **React's Effect Hook**
  The Effect Hook is used to move component lifecycle methods into functional components. Effects are similar to methods such as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`. Effects will run after every render, including the first render. 
  
  ```
@@ -152,7 +152,7 @@ function Counter() {
   }
 ```
 
-####  useEffect()
+###  **useEffect()**
 `useEffect()` can also take a second argument, an array. This allows us to specify if we would like the side effect to run only once, on mount, or if we would like it to run only if one particular value as changed. To run something before a component unmounts, we have to return a function from `useEffect()`.
 
 **componentDidMount** (Runs once)
@@ -186,12 +186,12 @@ useEffect(() => {
 });
 ```
 
-## Conclusion
+## **Conclusion**
 Hopefully this was a helpful React Hooks orientation! Functional components are no longer "stateless!" Thank you for reading. 
 
 ![](https://media.giphy.com/media/BkVqfREIvC012/giphy.gif)
 
-## Resources
+## **Resources**
 *   [React Hooks Documentation](https://reactjs.org/docs/hooks-intro.html)
 *   [Getting Started with React Hooks](https://scotch.io/tutorials/getting-started-with-react-hooks)
 *   [Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
