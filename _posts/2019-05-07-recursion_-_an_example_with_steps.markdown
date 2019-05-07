@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Recursion - an example with steps"
-date:       2019-05-07 17:36:32 +0000
+date:       2019-05-07 13:36:33 -0400
 permalink:  recursion_-_an_example_with_steps
 ---
 
@@ -54,7 +54,7 @@ function steps(n) {
 * We want to call our function again with different arguments, the **recursive step**. It is very important to make sure we have changed the arguments in some way on each function call, and that this change will lead us to the base case. If we do not change the arguments, we'll never reach the base case, and it'll cause an infinite loop.
 * We also have to think about **reasonable defaults**. If there are any optional inputs, we should give them default values so that we can safely handle calling our function with our without these arguments without entering an infinite loop.
 
-##### Refactor!
+### Refactor!
 So now, in order to refactor our iterative solution, the first step is identifying our base case. If `row === n`, this means we are at the end of our problem. This is something we noticed in our iterative solution as well since we iterated through each row up to `n` in our for loop. 
 
 It is also important to think about some other patterns from our iterative solution. We can note that if the `stair` string has a `length === n`, then we are at the end of a row, and we're ready to console log. If the length of the `stair` string is less than or equal to the row number we're working on, we add a `#` , otherwise add a space.
