@@ -40,8 +40,8 @@ function steps(n) {
 			   if (column <= row) {
 			      stair += '#';
 			   } else {
-				    stair += ' ';
-				 }
+				  stair += ' ';
+			  }
 			}  
 			
 			console.log(stair);
@@ -63,7 +63,7 @@ It is also important to think about some other patterns from our iterative solut
 function steps(n) {
    if (n === row) {  // base case
 	    return;
-	 }
+   }
 }
 ```
 
@@ -73,7 +73,7 @@ So here is our base case as we described earlier. However, right now there is no
 function steps(n, row = 0) {
    if (n === row) {  // base case
 	    return;
-	 }
+   }
 }
 ```
 
@@ -83,11 +83,11 @@ Then we have to write some code to see if the length of the `stair` string is eq
 function steps(n, row = 0) {
    if (n === row) {  // base case
 	    return;
-	 }
+   }
 	 
-	 if (n === stair.length) {  // if we are at the end of the row
+   if (n === stair.length) {  // if we are at the end of the row
 	    console.log(stair)
-	 }
+   }
 }
 ```
 
@@ -97,11 +97,11 @@ However, like the base case, we don't have a variable called `stair` right now. 
 function steps(n, row = 0, stair = '') {
    if (n === row) {  // base case
 	    return;
-	 }
+   }
 	 
-	 if (n === stair.length) {  // if we are at the end of the row
+   if (n === stair.length) {  // if we are at the end of the row
 	    console.log(stair)
-	 }
+   }
 }
 ```
 
@@ -111,13 +111,13 @@ Now, the only thing we have left to figure out is how we want to call our steps 
 function steps(n, row = 0, stair = '') {
    if (n === row) {  // base case
 	    return;
-	 }
+   }
 	 
-	 if (n === stair.length) {  // if we are at the end of the row
-	    console.log(stair);
-			steps(n, row + 1)  // increment row
-			return;
-	 }
+   if (n === stair.length) {  // if we are at the end of the row
+	   console.log(stair);
+	   steps(n, row + 1)  // increment row
+	   return;
+   }
 }
 ```
 
@@ -129,19 +129,19 @@ Now that we've handled our base case, and the case where we've hit the end of a 
 function steps(n, row = 0, stair = '') {
    if (n === row) {  // base case
 	    return;
-	 }
+   }
 	 
-	 if (n === stair.length) {  // if we are at the end of the row
+   if (n === stair.length) {  // if we are at the end of the row
 	    console.log(stair);
-			steps(n, row + 1)  // increment row
-			return;
-	 }
+	    steps(n, row + 1)  // increment row
+	    return;
+   }
 	 
-	 if (stair.length <= row) {
+   if (stair.length <= row) {
 	    stair += '#';
-	 } else {
+   } else {
 	    stair += ' ';
-	 }
+   }
 }
 ```
 
@@ -151,21 +151,21 @@ So here we've added some logic to deal with building out each stair, but at this
 function steps(n, row = 0, stair = '') {
    if (n === row) {  // base case
 	    return;
+   }
+	 
+   if (n === stair.length) {  // if we are at the end of the row
+	   console.log(stair);
+	   steps(n, row + 1)  // increment row
+	   return;
 	 }
 	 
-	 if (n === stair.length) {  // if we are at the end of the row
-	    console.log(stair);
-			steps(n, row + 1)  // increment row
-			return;
-	 }
-	 
-	 if (stair.length <= row) {
+   if (stair.length <= row) {
 	    stair += '#';
-	 } else {
+   } else {
 	    stair += ' ';
-	 }
+   }
 	 
-	 steps(n, row, stair);
+   steps(n, row, stair);
 }
 ```
 
