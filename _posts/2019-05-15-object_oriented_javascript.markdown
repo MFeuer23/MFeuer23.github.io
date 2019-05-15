@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Object Oriented JavaScript"
-date:       2019-05-15 15:09:08 +0000
+date:       2019-05-15 11:09:09 -0400
 permalink:  object_oriented_javascript
 ---
 
@@ -10,7 +10,7 @@ Object Oriented Programming (OOP) uses abstraction to create objects based on th
 
 I found [this documentation  from MDN](https://developer.mozilla.org/ms/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript) to be particularly helpful as an overview. 
 
-### Namespace
+### **Namespace**
 Conceptionally, a namespace is a container with a specific name in which we can bundle up functionality. However in JavaScript, there's no language-level difference between namespaces and regular objects. To create a namespace in JavaScript, we can create one global object, and all variables, methods, and functions become its properties. 
 
 For example, here's how we can create a global object called NAMESPACE:
@@ -27,12 +27,12 @@ NAMESPACE.commonMethod = {
   },
 ```
 
-### Built-In Objects
+### **Built-In Objects**
 JavaScript has built-in objects such as Math, Object, Array and String. For example, we can use `Math.random()` to generate a random value between 0 and 1. Every object in JavaScript is an instance of the built in `Object` and inherits its properties and methods.
 
 See more about the different types of built-in objects [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects).
 
-### Inheritance
+### **Inheritance**
 Inheritance is the concept of creating a child object as a specialized version of a parent object. Like when using React, we can import the React library and create classes that inherit functionality from React's Component class.
 
 ```
@@ -51,10 +51,11 @@ class Events extends Component {
 }
 export default Events;
 ```
- ### Encapsulation
+
+### **Encapsulation**
  Encapsulation is the concept of restricting direct access to some of the object's components. We want to enclose all of the functionality of an object within the object itself so that it's methods and properties are hidden from the rest of the application. This allows us to abstract or localize specific functionality in our objects and separate concerns.
  
- ### Polymorphism
+### **Polymorphism**
 Polymorphism is the concept that different classes can define methods with the same name because methods are scoped to the class in which they are defined (unless one object inherits from another)
 
 
