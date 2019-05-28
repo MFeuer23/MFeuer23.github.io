@@ -6,7 +6,7 @@ permalink:  react_hooks
 ---
 
 
-React Hooks are a new feature that just came out in React 16.8 a couple of months ago. React Hooks allow us to use state and lifecycle methods in functional components. Before Hooks, in order to use these methods, you'd have to expressing your react component with an ES6 class (or `React.Component`). So while Hooks let us use React's features without classes, classes aren't being removed or discouraged--we are simply being given more options.
+React Hooks are a new feature that just came out in React 16.8 a couple of months ago. React Hooks allow us to use state and lifecycle methods in functional components. Before Hooks, in order to use these methods, you'd have to express your react component with an ES6 class (or `React.Component`). So while Hooks let us use React's features without classes, classes aren't being removed or discouraged--we are simply being given more options.
 
 ## **React's State Hook**
 
