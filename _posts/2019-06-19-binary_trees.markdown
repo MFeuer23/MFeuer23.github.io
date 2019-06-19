@@ -35,7 +35,7 @@ One approach is to draw out a tree and/or think about it, and then translate it 
 
 So if we wanted to insert 3 into the following tree,
 ```
-                7
+                  7
 	 	/
 		2
 		 \
@@ -43,13 +43,13 @@ So if we wanted to insert 3 into the following tree,
 ```
 it becomes,
 ```
-                7
+                  7
 	 	/
 		2
 		 \
 		  5
 		 /
-    	      3
+    	         3
 ```
 
 We know we need to compare the number we would like to insert with the current node, starting at the root node. We look to the left or right, depending on whether the new node is smaller or larger. If there is no existing node, we insert the node there. Otherwise, we go through the process again. Sound a little bit like recursion? 
@@ -80,20 +80,20 @@ The recursive case is to compare `newNode` against `currentNode` and move to the
 ## Printing Nodes in Order
 Next how would we write an `inOrder` method that, given a root node, console.logs all of the other nodes in a tree, in sequential order. How do we do this? First, come up with an example:
 ```
-                7
+                  7
 	 	/ \
 		2   9
 		 \
 		  5
 		 / \
-    	      3   6
+    	         3   6
 ```
 
 We know that in a binary search tree, everything to the left of a node is smaller than everything to the right. What if we break down our tree a bit?
 ```
-                7
+                  7
 	 	/ \
-		2   9
+	2   9
 ```
 Here, we can clearly see we would take the branch to the left, then the center node, then the branch to the right. With our more complex tree above, how do we get to the other values? Recursion again? yes!
 
