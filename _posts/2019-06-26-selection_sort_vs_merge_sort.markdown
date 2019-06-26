@@ -1,11 +1,9 @@
 ---
 layout: post
 title:      "Selection Sort vs. Merge Sort"
-date:       2019-06-26 15:39:50 +0000
+date:       2019-06-26 11:39:51 -0400
 permalink:  selection_sort_vs_merge_sort
 ---
-
-Here I wanted to discuss the different sorting algorithms we can use to sort data to gain a better understanding of what goes on behind the scenes of an `Array.prototype.sort()` method in JavaScipt, and more.
 
 ## Selection Sort
 
