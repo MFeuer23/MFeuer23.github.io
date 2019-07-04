@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Linked Lists, an example with loops"
-date:       2019-07-04 03:02:41 +0000
+title:      "Linked Lists"
+date:       2019-07-03 23:02:41 -0400
 permalink:  linked_lists_an_example_with_loops
 ---
 
