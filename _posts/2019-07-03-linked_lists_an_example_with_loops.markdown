@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Linked Lists"
+title:      "Linked Lists II"
 date:       2019-07-03 23:02:41 -0400
 permalink:  linked_lists_an_example_with_loops
 ---
