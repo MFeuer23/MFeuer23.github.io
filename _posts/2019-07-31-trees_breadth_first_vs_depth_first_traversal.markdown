@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Trees: Breadth First vs. Depth First Traversal"
-date:       2019-07-31 19:35:36 +0000
+date:       2019-07-31 15:35:37 -0400
 permalink:  trees_breadth_first_vs_depth_first_traversal
 ---
 
